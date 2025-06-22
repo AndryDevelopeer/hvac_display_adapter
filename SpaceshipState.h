@@ -1,0 +1,12 @@
+#pragma once
+
+#include "DateTime.h"
+#include "SpaceshipHvac.h"
+
+struct SpaceshipState {
+    SpaceshipHvac::State hvac;
+    uint8_t audioButton;
+    uint8_t hftButton;
+    int8_t temp = SpaceshipDisplay::NUM_BLANK;
+    bool reversing;
+};
